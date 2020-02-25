@@ -1,0 +1,109 @@
+$primary-color:rgb(0, 39, 82);
+$secondary-color:#002752;
+$tertiary-color:#00A4A1;
+$quaternary-color:#FFF;
+
+*{
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 10px;
+}
+.navbar{
+    display: flex;
+    flex-direction: row;
+    padding:0 4rem;
+    .college-logo{
+        flex-grow: 3;
+        height: inherit;
+    }
+    &-container{
+        flex-grow: 3;
+        font-family: Arial, Helvetica, sans-serif;
+        &-top{
+            height: 50px;
+            border-bottom: rgb(206, 202, 202) 1px solid;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            font-size: 1.7rem;
+            .navbar-container-tabs{
+                margin:2rem 1.4rem 1.4rem 1.4rem;
+                color: $secondary-color;
+            }
+        }
+        &-bottom{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            position: relative;
+            font-size: 1.9rem;
+            .navbar-container-tabs{
+                padding:1.5rem 0 1.5rem 0;
+                font-weight: 700;
+                position: relative;
+                a{
+                    color: $primary-color;
+                    text-decoration: none;
+                }
+                
+                i{
+                    position: absolute;
+                    color:$tertiary-color;
+                    font-size: 1.5rem;
+                    top:50%;
+                    transform: translateY(-50%);
+                    right:-2rem;
+                }
+                &:hover{
+                    color:$tertiary-color;
+                    border-bottom: $tertiary-color 0.6rem solid;
+                    margin-bottom: -0.6rem;
+                }
+            }
+            &-menus{
+                width: inherit;
+                background-color: $secondary-color;
+                color: $quaternary-color;
+                margin-top: 0.6rem;
+                padding: 5rem 3rem;
+                display: flex;
+                .menu-left{
+                    margin-right: 10rem;
+                    p{
+                        font-size: 1.8rem;
+                        font-weight: bold;
+                        margin-bottom: 2rem;
+                    }
+                    a{
+                        text-decoration: none;
+                        color: $quaternary-color;
+                        font-weight: normal;
+                        line-height: 4rem;
+                        
+                        i{
+                            color:$tertiary-color;
+                            margin-right: 1rem;
+                        }
+                    }
+                }
+                .menu-right{
+
+                    p{
+                        text-align: justify;
+                        font-size: 1.8rem;
+                        margin: 4rem;
+                    }
+                }
+                
+            }
+            
+        }
+    }
+    
+  
+}
